@@ -1,0 +1,91 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(226, 226, 226);
+    margin-top: 100px;
+    margin-left: 345px;
+}
+#logo{
+    height: 60px;
+    width: 60px;
+    margin-top: 15px;
+}
+img{
+    height: 35px;
+    width: 35px;
+}
+header{
+    display: inline-flex;
+    margin-left: 30px;
+}
+header h1{
+    font-size: 40px ;  
+    font-weight: bold;
+}
+#form{
+    max-width: 550px;
+    width: 100%;
+    display: flex ;
+    margin-left: 150px;
+    justify-content: space-between;
+}
+table{
+    width: 70%;
+    margin-top: 50px;
+}
+tbody{
+    width: 70%;
+}
+input{
+    font-size: 15px;
+    padding: 8px;
+    border: none;
+    border-bottom: 2px solid black;
+}
+#nome{
+    height: 30px;
+    width: 350px;
+    margin-left: -90px;
+}
+#nota{
+    width: 100px;
+    height: 30px;
+}
+form button{
+    height: 30px;
+    background-color: rgb(0, 197, 0);
+    border: none;
+    font-weight: bold;
+}
+form button:hover{
+    color: rgb(0, 105, 0);
+    cursor: pointer;
+}
+table th{
+    border-bottom: 2px solid black;
+}
+tbody td {
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+tfoot td{
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+.resultado{
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(2, 0, 0);
+    border-radius: 3px;
+    padding: 10px;
+}
+.aprovado{
+    background-color: rgb(0, 236, 0);
+    color: aliceblue;
+}
+.reprovado{
+    background-color: red;
+    color: aliceblue;
+}
