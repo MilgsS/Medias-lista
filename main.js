@@ -6,6 +6,7 @@ const ativi = [];
 const not = [];
 const spanapv = '<span class="resultado aprovado">Aprovado</span>'
 const spanrpv = '<span class="resultado reprovado">Reprovado</span>'
+const notaminima = prompt('Digite a nota pra passar:')
 
 form.addEventListener('submit', function(e) {
     e.preventDefault();
@@ -21,7 +22,7 @@ function AddLinhas(){
             let linha = '<tr>';
                 linha += `<td>${nome.value}</td>`;
             linha += `<td>${nota.value}</td>`;
-        linha += `<td>${nota.value >= 6 ? apv : rpv }</td>`;
+        linha += `<td>${nota.value >= notaminima ? apv : rpv }</td>`;
         linha += `</tr>`;
     linhas += linha;
     nome.value = '';
@@ -31,12 +32,13 @@ function AddLinhas(){
 function AttTabela(){
     const tabela = document.querySelector('tbody');
     tabela.innerHTML = linhas;
-};
-
-function ATTMediaFinal(){
     const mediaf = calculoM();
     document.getElementById('mediafinal').innerHTML = mediaf
     document.getElementById('mediafinalresultado').innerHTML = mediaf >= 6 ? spanapv : spanrpv; 
+};
+
+function ATTMediaFinal(){
+
 }
 function calculoM(){
         let soma = 0;
