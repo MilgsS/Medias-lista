@@ -22,7 +22,7 @@ function AddLinhas(){
             let linha = '<tr>';
                 linha += `<td>${nome.value}</td>`;
             linha += `<td>${nota.value}</td>`;
-        linha += `<td>${nota.value >= notaminima ? apv : rpv }</td>`;
+        linha += `<td>${nota.value >= notaminima? apv:rpv }</td>`;
         linha += `</tr>`;
     linhas += linha;
     nome.value = '';
@@ -34,7 +34,7 @@ function AttTabela(){
     tabela.innerHTML = linhas;
     const mediaf = calculoM();
     document.getElementById('mediafinal').innerHTML = mediaf
-    document.getElementById('mediafinalresultado').innerHTML = mediaf >= 6 ? spanapv : spanrpv; 
+    document.getElementById('mediafinalresultado').innerHTML = mediaf >= notaminima ? spanapv : spanrpv; 
 };
 
 function ATTMediaFinal(){
